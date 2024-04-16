@@ -5,7 +5,6 @@ int main(void){
     int ary[5];
     for(int i=0;i<5;i++){
         scanf("%d", &ary[i]);
-
     }
 
     double sum=0.0;

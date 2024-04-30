@@ -14,7 +14,7 @@ int main(void){
 
     for(int i=0,cnt =0 ; i<ROW; i++){
 
-        printf("%p %p\n",td[i],*(td+i));
+        printf("%p %p",td[i],*(td+i));
         for(int j =0;j<COL;j++, cnt++)
             printf("%d %d %d ", *(*td+cnt), *(td[i]+j), *(*(td+1)+j));
         printf("\n");
@@ -23,6 +23,6 @@ int main(void){
     **td =10;
     *(*td+4) =20;
     *(*(td+1)+2) =30;
-    pritnf("%d %d %d\n", td[0][0],td[1][1],td[1][2]);
+    printf("%d %d %d\n", td[0][0],td[1][1],td[1][2]);
     return 0;
 }
